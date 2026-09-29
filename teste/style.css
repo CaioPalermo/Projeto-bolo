@@ -1,0 +1,198 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Inter , sans-serif;
+ background-color:transparent;
+ 
+}
+body{
+    background-color: #ffb1c2;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(2px 4px 6px rgba(37, 16, 2, 0.829));
+
+}
+
+.header {
+ background-image:url(imagens/bg2.png);
+ background-color: #FFBDCB;
+ padding: 0% 0%;
+ align-items: center; 
+ justify-content: center;
+ display: flex; 
+ 
+ 
+}
+
+.nav-list {
+    border: 2px solid #FFBDCB;
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    background-color:#3d1c08;
+    box-shadow: 0 0 20px #000000;
+}
+
+.nav-list a {
+    color: #FFBDCB;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+}
+
+.nav-list a:hover {
+    color: #ff4444;
+    
+}
+/* carrosel */
+.slider {
+    width: 1350px;
+    height: 470px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #000000;
+    position: relative;
+    
+   
+}
+.slides {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    transition: transform 0.8s ease-in-out;
+}
+.slide{
+    min-width: 1350px;
+    height: 470px;
+    flex-shrink: 0;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* novidades em card */
+
+/* menu de lojas */
+.lojas .boxlojas{
+ background-image:url(imagens/bg.jpg-1.png);
+ background-position: center;
+ background-size: cover;
+ padding: 60px ;
+ border-bottom: 7px solid #542200;
+ text-align:center ; color: #616161;
+}
+h2{
+    color:#542200;
+    font-size: 20px;
+    background:transparent;
+    text-align: center;
+
+  }
+h1{
+    text-align: center;
+    font-size: 20px;
+    
+}
+/* CARDS NOVIDADE */
+.sabores-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sabores-container h1{
+    color:#3d1c08;
+    font-size: 2rem;    
+    margin-bottom:  30px;
+}
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px   ;
+}
+/* escibde a barra de rolagem horizontal */
+.cards-grid::-webkit-scrollbar{
+    display: none;
+}
+/* estilo dos card individual */
+.card{
+    position: relative;
+    width: 220px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-img{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    
+}
+/* Gradiente escuro para dar leitura ao texto */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+}
+.card-overlay h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Botão Saiba mais */
+.btn-saiba-mais {
+  background-color: #fdf5eb;
+  color: #3d1b11;
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Botões laterais do Carrossel */
+.nav-btn {
+  background-color: #3d1b11;
+  color: #ffffff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
