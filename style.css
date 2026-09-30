@@ -20,9 +20,9 @@ body{
 .header {
  background-image:url(imagens/bg2.png);
  background-color: #FFBDCB;
- padding: 0% 0%;
+ padding: 0% 10%;
  align-items: center; 
- justify-content: center;
+ justify-content:space-evenly;
  display: flex; 
  
  
@@ -35,26 +35,36 @@ body{
     display: flex;
     list-style: none;
     gap: 50px;
-    background-color:#3d1c08;
+    background-color:#542200;
     box-shadow: 0 0 20px #000000;
+    
 }
 
 .nav-list a {
     color: #FFBDCB;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     transition: color 0.3s ease;
 
 }
 
 .nav-list a:hover {
-    color: #ff4444;
+    color: #ff6e6e;
     
 }
+.social-icons img{
+   width: 20%;
+   height: auto;
+  
+}
+.social-icons a:hover {
+    transform: scale(1.1);         
+}
+
 /* carrosel */
 .slider {
-    width: 1350px;
+    width: auto;
     height: 470px;
     margin: auto;
     overflow: hidden;
@@ -87,7 +97,7 @@ body{
 
 /* menu de lojas */
 .lojas .boxlojas{
- background-image:url(imagens/bg.jpg-1.png);
+ background-image:url(imagens/bgggg.jpg);
  background-position: center;
  background-size: cover;
  padding: 60px ;
@@ -99,14 +109,21 @@ h2{
     font-size: 20px;
     background:transparent;
     text-align: center;
-
+    filter: drop-shadow(2px 2px 7px rgba(37, 16, 2, 0.829));
+    pointer-events: none;
   }
+p{
+    text-decoration:underline;
+    color: #50494a2d;
+    pointer-events: none;
+    
+}
 h1{
     text-align: center;
     font-size: 20px;
     
 }
-/* CARDS NOVIDADE */
+/* CARDS NOVIDADE TEXTO */
 .sabores-container {
     text-align: center;
     padding: 40px 20px;
@@ -124,25 +141,22 @@ h1{
     justify-content: center;
     gap: 15px   ;
 }
-/* escibde a barra de rolagem horizontal */
-.cards-grid::-webkit-scrollbar{
-    display: none;
-}
+
 /* estilo dos card individual */
 .card{
     position: relative;
     width: 220px;
-    height: 320px;
     border-radius: 20px;
     overflow: hidden;
     text-decoration: none;
     flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
+    box-shadow: 0 0 0 rgb(0, 0, 0);
+    
 
 }
 .card:hover {
-  transform: translateY(-5px);
+ transition: transform 0.3s ease
+ 
 }
 .card-img{
     width: 20%;
@@ -150,7 +164,13 @@ h1{
     object-fit: cover;
     
 }
-/* Gradiente escuro para dar leitura ao texto */
+.card-img:hover{
+
+    transform: scale(1.02); /* Aumenta o card em 5% */
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.466); /* Sombra mais destacada */
+}
+
 .card-overlay {
   position: absolute;
   bottom: 0;
@@ -181,6 +201,9 @@ h1{
   font-size: 0.8rem;
   font-weight: bold;
 }
+.btn-saiba-mais:hover{
+    transform: scale(1.1); 
+}
 
 /* Botões laterais do Carrossel */
 .nav-btn {
@@ -195,4 +218,8 @@ h1{
   align-items: center;
   justify-content: center;
   font-weight: bold;
+}
+
+.nav-btn:hover{
+    transform: scale(1.1); 
 }

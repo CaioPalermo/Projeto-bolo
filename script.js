@@ -8,5 +8,5 @@ setInterval(() => {
   
   const slideWidth = slideItems[0].offsetWidth + 20; 
   slides.style.transform = `translateX(-${index * slideWidth}px)`;
-}, 3000);
+}, 5000);
 
