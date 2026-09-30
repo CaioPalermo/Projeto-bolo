@@ -53,14 +53,7 @@ body{
     color: #ff6e6e;
     
 }
-.social-icons img{
-   width: 20%;
-   height: auto;
-  
-}
-.social-icons a:hover {
-    transform: scale(1.1);         
-}
+
 
 /* carrosel */
 .slider {
